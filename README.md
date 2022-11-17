@@ -18,19 +18,10 @@
 
 ---
 
-# :briefcase: Business Case
+# :briefcase: Business Case 
 
 
 You are a Data Analyst working for an e-commerce company named X. You are tasked with preparing a presentation to present an overview of the company's business and operations to date for Sales and Operations Managers. 
-
-The presentation should include at a minimum the following information: 
-- Business overview. 
-- Customer satisfaction.  
-- 2 to 3 areas of recommendation (areas) where the company can improve.
-
-Some additional information for the case study:
-- Since there is only data up to 2018, we will assume that it is currently September 2018 (data after September 2018 you can ignore).
-- The company is based in the US, but incorporated in Brazil (that's why some information is written in Portuguese).
 
 ---
 
@@ -251,26 +242,56 @@ a3f6f7f6f433de0aefbb97da197c554c|9c214ac970e84273583ab523dfafd09b|5|			| |5/17/2
 </div>
 </div>
 
+---
+### ✔ Customers dataset
+Provide Customer Information 
+
+customer_id: customer unique ID ( used to link with customer_id of orders_dataset table.
+customer_unique_id: mã unique ID of customer in system of customer information management. 
+customer_zip_code_prefix: zip code of customer
+customer_city: City name of customer 
+customer_state: State name of customer
+
+<div align="center">
+First 10 rows
+
+|customer_id|customer_unique_id|customer_zip_code_prefix|customer_city|customer_state|
+|:----|:-----|:----|:----|:----|
+06b8999e2fba1a1fbc88172c00ba8bc7|861eff4711a542e4b93843c6dd7febb0|	14409|	franca	|SP|
+18955e83d337fd6b2def6b18a428ac77|	290c77bc529b7ac935b93aa66c333dc3|	9790|	sao bernardo do campo|	SP|
+4e7b3e00288586ebd08712fdd0374a03|	060e732b5b29e8181a18229c7b0b2b5e|	1151|	sao paulo	|SP|
+b2b6027bc5c5109e529d4dc6358b12c3|	259dac757896d24d7702b9acbbff3f3c|	8775|	mogi das cruzes|	SP|
+4f2d8ab171c80ec8364f7c12e35b23ad|	345ecd01c38d18a9036ed96c73b8d066|	13056|	campinas	|SP|
+879864dab9bc3047522c92c82e1212b8|	4c93744516667ad3b8f1fb645a3116a4|	89254|	jaragua do sul	|SC|
+fd826e7cf63160e536e0908c76c3f441|	addec96d2e059c80c30fe6871d30d177|	4534|	sao paulo	|SP|
+5e274e7a0c3809e14aba7ad5aae0d407|	57b2a98a409812fe9618067b6b8ebe4f|	35182|	timoteo	|MG|
+5adf08e34b2e993982a47070956c5c65|	1175e95fb47ddff9de6b2b06188f7e0d|	81560|	curitiba	|PR|
+4b7139f34592b3a31687243a302fa75b|	9afe194fb833f79e300e37e580171f22|	30575|	belo horizonte|	MG|
+
+
+
+</div>
+</div>
+
+---
 
 # :triangular_flag_on_post: The Final Test Requirements
-## 1.	Market Trending
-One of the indicators that the Marketplace team cares about is the conversion rate of users. In other words, they care about the percentage of users who can find the right hotel booking for their needs on the ABC website. One way to determine this is to calculate the booking conversion rate, which is calculated by dividing the number of bookings by the number of clicks.
 
-- These are some suggestions:
-  - Draw a daily booking conversion chart for the whole year of 2019 for ABC website
-  - Do you notice any trends? What factors are driving this trend? (What are the main drivers of this trend?)
-  - Can you guess which country these data are from? On what basis do you speculate?
+The presentation should include at a minimum the following information: 
+- Business overview. 
+- Customer satisfaction.  
+- 2 to 3 areas of recommendation (areas) where the company can improve.
 
-## 2.	Advertiser performance
-- One of your main tasks as a Market Data Analyst is to understand advertisers' performance, using datasets similar to the one you were provided with. From an advertiser's perspective:
-  - Assuming every advertiser has a profit margin of 15% for all customer segments (short, medium, long), calculate the total profit of each advertiser for the year.
-  - Based on the trends you've discovered, what recommendations do you have for each advertiser to improve their advertising campaigns in 202
+Some additional information for the case study:
+- Since there is only data up to 2018, we will assume that it is currently September 2018 (data after September 2018 you can ignore).
+- The company is based in the US, but incorporated in Brazil (that's why some information is written in Portuguese).
 
 
-# A. [Data Exploration and Cleansing](https://github.com/beto1810/Online_Hotel_Web_Search/blob/main/A.%20Data%20Exploration%20and%20Cleansing.md)
+
+# A. [Data Exploration and Cleansing]()
 
 
-# B. [Analysis](https://github.com/beto1810/Online_Hotel_Web_Search/blob/main/B.Analysis.md)
+# B. [Analysis]()
 
 
 # 🧾 What can you practice with this case study?
@@ -282,4 +303,5 @@ One of the indicators that the Marketplace team cares about is the conversion ra
 - POWER BI
   - Visualize
   - Analyze
+  - Measure, DAX, etc
   - Import CSV File and Transform data
