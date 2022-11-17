@@ -46,6 +46,7 @@ Provide information about orders
 - order_delivered_customer_date: the time the item was delivered to the customer
 - order_estimated_delivery_date: the estimated time the order will be delivered to the customer
 
+<details><summary> 👆🏼 Click to expand Orders Dataset </summary>
 
 <div align="center">
 
@@ -70,6 +71,8 @@ e69bfb5eb88e0ed6a785585b27e16dbf|	31ad1d1b63eb9962463f764d4e6e0c9d|	delivered|	7
 </div>
 </div>
 
+</details>
+
 ---
 
 ### ✔ Order items dataset  
@@ -81,6 +84,7 @@ Provide information about each item in the order and shipping costs
 - price: the price of the item
 - freight_value: shipping fee
 
+<details><summary> 👆 Click to expand Orders Items Dataset </summary>
 
 <div align="center">
 
@@ -106,6 +110,8 @@ First 10 rows
 </div>
 </div>
 
+</details>
+
 ---
 
 ### ✔ Order payments dataset
@@ -113,11 +119,13 @@ Provide information of order payments.
 
 *Note that we need to combine all values of each order to have total values.*
 
-order_id: unique ID of order
-payment_sequential: sequence order
-payment_type: payment type
-payment_installments: full payment (payment_installments = 1) hay installment (payment_installments > 1,total payment is splited to many payments . payment_value equal total payments of all times payment installments)
-payment_value: giá trị của thanh toán
+- order_id: unique ID of order
+- payment_sequential: sequence order
+- payment_type: payment type
+- payment_installments: full payment (payment_installments = 1) or installment (payment_installments > 1,total payment is splited to many payments .
+- payment_value: payment value (payment_value - equal total payments of all times payment installments)
+
+<details><summary> 👆 Click to expand Orders Payments Dataset </summary>
 
 <div align="center">
 
@@ -143,6 +151,8 @@ ba78997921bbcdc1373bb41e913ab953|	1	|credit_card|	8|	107.78|
 </div>
 </div>
 
+</details>
+
 ---
 
 ### ✔ Product dataset 
@@ -156,6 +166,8 @@ Provide product information
 - product_length_cm: length of product (cm)
 - product_height_cm: height of product (cm)
 - product_width_cm: width/deep of product (cm)
+
+<details><summary> 👆 Click to expand Product Dataset </summary>
 
 <div align="center">
 
@@ -181,6 +193,8 @@ cef67bcfe19066a932b7673e239eb23d|bebes|	27|	261|	1|	371|	26|	4|	26|
 </div>
 </div>
 
+</details>
+
 ---
 
 ### ✔ Product category name translation
@@ -188,6 +202,9 @@ Translate the product name from Portuguese to English
 
 - product_category_name
 - product_category_name_english
+
+<details><summary> 👆 Click to expand Product Category Name Translation Dataset </summary>
+
 
 <div align="center">
 
@@ -212,6 +229,8 @@ relogios_presentes|watches_gifts|
 </div>
 </div>
 
+</details>
+
 ---
 
 ### ✔ Order reviews dataset 
@@ -224,6 +243,7 @@ Provide review details of each order
 - review_creation_date: Created date of review
 - review_answer_timestamp: timestamp of review answers
 
+<details><summary>  Click to expand Order Reviews Dataset </summary>
 
 <div align="center">
 
@@ -250,16 +270,24 @@ a3f6f7f6f433de0aefbb97da197c554c|9c214ac970e84273583ab523dfafd09b|5|			| |5/17/2
 </div>
 </div>
 
+</details>
+
 ---
 ### ✔ Customers dataset
 Provide Customer Information 
 
-customer_id: customer unique ID ( used to link with customer_id of orders_dataset table.
-customer_unique_id: mã unique ID of customer in system of customer information management. 
-customer_zip_code_prefix: zip code of customer
-customer_city: City name of customer 
-customer_state: State name of customer
+- customer_id: customer unique ID ( used to link with customer_id of orders_dataset table.
+- customer_unique_id: mã unique ID of customer in system of customer information management. 
+- customer_zip_code_prefix: zip code of customer
+- customer_city: City name of customer 
+- customer_state: State name of customer
 
+<details><summary> 👆 Click to expand Customers Dataset </summary>
+
+<div align="center">
+
+**Table: Customers_dataset** 
+ 
 <div align="center">
 First 10 rows
 
@@ -277,9 +305,10 @@ fd826e7cf63160e536e0908c76c3f441|	addec96d2e059c80c30fe6871d30d177|	4534|	sao pa
 4b7139f34592b3a31687243a302fa75b|	9afe194fb833f79e300e37e580171f22|	30575|	belo horizonte|	MG|
 
 
+</div>
+</div>
 
-</div>
-</div>
+</details>
 
 ---
 
