@@ -36,7 +36,8 @@ Some additional information for the case study:
 
 # :bookmark_tabs:Example Datasets
 
-### Orders dataset: Provide information about orders
+### Orders dataset
+Provide information about orders
 - order_id: unique ID of the order
 - customer_id: unique ID of the customer
 - order_status: order status
@@ -54,7 +55,6 @@ Some additional information for the case study:
 <div align="center">
 First 10 rows
 
----
 |order_id|customer_id|order_status|order_purchase_timestamp|order_approved_at|order_delivered_carrier_date|order_delivered_customer_date|order_estimated_delivery_date|
 |:----|:-----|:----|:----|:----|:----|:----|:----|
 e481f51cbdc54678b7cc49136f2d6af7|	9ef432eb6251297304e76186b10a928d|	delivered|	10/2/2017 10:56|10/2/2017 11:07|	10/4/2017 19:55|	10/10/2017 21:25|	10/18/2017|
@@ -68,12 +68,13 @@ a4591c265e18cb1dcee52889e2d8acc3|	503740e9ca751ccdda7ba28e9ab8f608|	delivered|	7
 76c6e866289321a7c93b82b54852dc33|	f54a9f0e6b351c431402b8461ea51999|	delivered|	1/23/2017 18:29|	1/25/2017 2:50|	1/26/2017 14:16|	2/2/2017 14:08|	3/6/2017|
 e69bfb5eb88e0ed6a785585b27e16dbf|	31ad1d1b63eb9962463f764d4e6e0c9d|	delivered|	7/29/2017 11:55|	7/29/2017 12:05|	8/10/2017 19:45|	8/16/2017 17:14|	8/23/2017|
 
-
 </div>
 </div>
 
+---
 
-### Order items dataset  : Provide information about each item in the order and shipping costs
+### Order items dataset  
+Provide information about each item in the order and shipping costs
 - order_id: unique ID of the order
 - order_item_id: ID of the item in the order (item number 1 has ID 1, item 2 has ID 2, etc. Based on this we also know how many items each order has)
 - product_id: unique ID of the product in the order
@@ -89,7 +90,7 @@ e69bfb5eb88e0ed6a785585b27e16dbf|	31ad1d1b63eb9962463f764d4e6e0c9d|	delivered|	7
 <div align="center">
 First 10 rows
 
----
+
 |order_id|order_item_id|product_id|seller_id|price|freight_value|
 |:----|:-----|:----|:----|:----|:----|
 00010242fe8c5a6d1ba2dd792cb16214|	1|	4244733e06e7ecb4970a6e2683c13e61|	48436dade18ac8b2bce089ec2a041202|	58.9|	13.29|
@@ -103,12 +104,45 @@ First 10 rows
 0005a1a1728c9d785b8e2b08b904576c|	1|	310ae3c140ff94b03219ad0adc3c778f|	a416b6a846a11724393025641d4edd5e|	145.95|	11.65|
 0005f50442cb953dcd1d21e1fb923495|	1|	4535b0e1091c278dfd193e5a1d63b39f|	ba143b05f0110f0dc71ad71b4466ce92|	53.99|	11.4|
   
+</div>
+</div>
 
+---
+
+### Order payments dataset
+Provide information of order payments.
+
+*Note that we need to combine all values of each order to have total values.*
+
+order_id: unique ID of order
+payment_sequential: sequence order
+payment_type: payment type
+payment_installments: full payment (payment_installments = 1) hay installment (payment_installments > 1,total payment is splited to many payments . payment_value equal total payments of all times payment installments)
+payment_value: giá trị của thanh toán
+
+<div align="center">
+
+**Table: order_payments_dataset** 
+
+<div align="center">
+First 10 rows
+
+|order_id|payment_sequential|payment_type|payment_installments|payment_value|
+|:----|:-----|:----|:----|:----|
+b81ef226f3fe1789b1e8b2acac839d17| 1	|credit_card|	8|	99.33|
+a9810da82917af2d9aefd1278f1dcfa0|	1	|credit_card|	1|	24.39|
+25e8ea4e93396b6fa0d3dd708e76c1bd|	1	|credit_card|	1|	65.71|
+ba78997921bbcdc1373bb41e913ab953|	1	|credit_card|	8|	107.78|
+42fdf880ba16b47b59251dd489d4441a|	1	|credit_card|	2|	128.45|
+298fcdf1f73eb413e4d26d01b25bc1cd|	1	|credit_card|	2|	96.12|
+771ee386b001f06208a7419e4fc1bbd7|	1	|credit_card|	1|	81.16|
+3d7239c394a212faae122962df514ac7|	1	|credit_card|	3|	51.84|
+1f78449c87a54faf9e96e88ba1491fa9|	1	|credit_card|	6|	341.09|
+0573b5e23cbd798006520e1d5b4c6714|	1	|cash|	1|	51.95|
 
 
 </div>
 </div>
-
 ---
 
 # :triangular_flag_on_post: The Final Test Requirements
