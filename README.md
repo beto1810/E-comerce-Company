@@ -1,6 +1,5 @@
 # 🛒 E-commerce Company
 
-## Final Test of "BI Course" of MINDX TECHNOLOGY SCHOOL.
 
  <img src="https://user-images.githubusercontent.com/101379141/201035143-6f1af4fe-4169-4074-8287-6790d88803db.png" alt="Image" width="350" height="160">  
 
