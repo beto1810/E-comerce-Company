@@ -36,7 +36,7 @@ Some additional information for the case study:
 
 # :bookmark_tabs:Example Datasets
 
-### Orders dataset
+### ✔ Orders dataset
 Provide information about orders
 - order_id: unique ID of the order
 - customer_id: unique ID of the customer
@@ -73,7 +73,7 @@ e69bfb5eb88e0ed6a785585b27e16dbf|	31ad1d1b63eb9962463f764d4e6e0c9d|	delivered|	7
 
 ---
 
-### Order items dataset  
+### ✔ Order items dataset  
 Provide information about each item in the order and shipping costs
 - order_id: unique ID of the order
 - order_item_id: ID of the item in the order (item number 1 has ID 1, item 2 has ID 2, etc. Based on this we also know how many items each order has)
@@ -109,7 +109,7 @@ First 10 rows
 
 ---
 
-### Order payments dataset
+### ✔ Order payments dataset
 Provide information of order payments.
 
 *Note that we need to combine all values of each order to have total values.*
@@ -143,7 +143,114 @@ ba78997921bbcdc1373bb41e913ab953|	1	|credit_card|	8|	107.78|
 
 </div>
 </div>
+
 ---
+
+### ✔ Product dataset 
+Provide product information
+- product_id: unique ID of product
+- product_category_name: category product name 
+- product_name_lenght: number of product name letters
+- product_description_lenght: number of product description letters
+- product_photos_qty: number of product photo
+- product_weight_g: weight of product  (g)
+- product_length_cm: length of product (cm)
+- product_height_cm: height of product (cm)
+- product_width_cm: width/deep of product (cm)
+
+<div align="center">
+
+**Table: products_dataset** 
+
+<div align="center">
+First 10 rows
+
+|product_id|product_category_name|product_name_lenght|product_description_lenght|product_photos_qty|product_weight_g|product_length_cm|product_height_cm|product_width_cm|
+|:----|:-----|:----|:----|:----|:----|:----|:----|:----|
+1e9e8ef04dbcff4541ed26657ea517e5|perfumaria|40|287|1|225|16|10|14|
+3aa071139cb16b67ca9e5dea641aaa2f|artes|44|276|1|1000|30|18|20|
+96bd76ec8810374ed1b65e291975717f|esporte_lazer|	46|	250|	1	|154|	18|	9|	15|
+cef67bcfe19066a932b7673e239eb23d|bebes|	27|	261|	1|	371|	26|	4|	26|
+9dc1a7de274444849c219cff195d0b71|utilidades_domesticas|	37|	402|	4|	625|	20|	17|	13|
+41d3672d4792049fa1779bb35283ed13|instrumentos_musicais|	60|	745|	1|	200|	38|	5|	11|
+732bd381ad09e530fe0a5f457d81becb|cool_stuff|	56|	1272|	4|	18350|	70|	24|	44|
+2548af3e6e77a690cf3eb6368e9ab61e|moveis_decoracao|	56|	184|	2|	900|	40|	8|	40|
+37cc742be07708b53a98702e77a21a02|eletrodomesticos|	57|	163	|1	|400	|27	|13	|17|
+8c92109888e8cdf9d66dc7e463025574|brinquedos|	36|	1156|	1|	600|	17|	10|	12|
+
+
+</div>
+</div>
+
+---
+
+### ✔ Product category name translation
+Translate the product name from Portuguese to English
+
+- product_category_name
+- product_category_name_english
+
+<div align="center">
+
+**Table: product_category_name_translation** 
+
+<div align="center">
+First 10 rows
+
+|product_category_name|product_category_name_english|
+|:----|:-----|
+beleza_saude|health_beauty|
+informatica_acessorios|computers_accessories|
+automotivo	|auto|
+cama_mesa_banho	|bed_bath_table|
+moveis_decoracao	|furniture_decor|
+esporte_lazer	|sports_leisure|
+perfumaria	|perfumery|
+utilidades_domesticas|	housewares|
+telefonia|	telephony|
+relogios_presentes|watches_gifts|
+
+</div>
+</div>
+
+---
+
+### ✔ Order reviews dataset 
+Provide review details of each order
+- review_id: unique ID of revie
+- order_id: unique ID of order
+- review_score: Review Score
+- review_comment_title: Comment title
+- review_comment_message: detail of review
+- review_creation_date: Created date of review
+- review_answer_timestamp: timestamp of review answers
+
+
+<div align="center">
+
+**Table: order_reviews_dataset** 
+
+<div align="center">
+First 10 rows
+
+|review_id|order_id|review_score|review_comment_title|review_comment_message|review_creation_date|review_answer_timestamp|
+|:----|:-----|:----|:----|:----|:----|:----|
+7bc2406110b926393aa56f80a40eba40|73fc7af87114b39712e6da79b0a377eb|4|		|	|1/18/2018 0:00|	1/18/2018 21:46|
+80e641a11e56f04c1ad469d5645fdfde|a548910a1c6147796b98fdf73dbeba33|5|			3/10/2018 0:00|	3/11/2018 3:05|
+228ce5500dc1d8e020d8d1322874b6f0|f9e4b658b201a9f2ecdecbb34bed034b|5|			2/17/2018 0:00|	2/18/2018 14:36|
+e64fb393e7b32834bb789ff8bb30750e|658677c97b385a9be170737859d3511b|5|		|Recebi bem antes do prazo estipulado.|	4/21/2017 0:00|	4/21/2017 22:02|
+f7c4243c7fe1938f181bec41a392bdeb|8e6bfb81e283fa7e4f11123a3fb894f1|5|		|ParabÃ©ns lojas lannister adorei comprar pela Internet seguro e prÃ¡tico ParabÃ©ns a todos feliz PÃ¡scoa|	3/1/2018 0:00|	3/2/2018 10:26|
+15197aa66ff4d0650b5434f1b46cda19|b18dcdf73be66366873cd26c5724d1dc	|1|		|	|4/13/2018 0:00	|4/16/2018 0:39|
+07f9bee5d1b850860defd761afa7ff16|e48aa0d2dcec3a2e87348811bcfdf22b	|5|		|	|7/16/2017 0:00	|7/18/2017 19:30|
+7c6400515c67679fbee952a7525281ef|c31a859e34e3adac22f376954e19b39d|5	|		| |8/14/2018 0:00	|8/14/2018 21:36|
+a3f6f7f6f433de0aefbb97da197c554c|9c214ac970e84273583ab523dfafd09b|5|			| |5/17/2017 0:00	|5/18/2017 12:05|
+8670d52e15e00043ae7de4c01cc2fe06|b9bf720beb4ab3728760088589c62129|4|	recomendo|	aparelho eficiente. no site a marca do aparelho esta impresso como 3desinfector e ao chegar esta com outro nome...atualizar com a marca correta uma vez que Ã© o mesmo aparelho|	5/22/2018 0:00|	5/23/2018 16:45|
+
+
+
+</div>
+</div>
+
 
 # :triangular_flag_on_post: The Final Test Requirements
 ## 1.	Market Trending
