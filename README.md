@@ -8,9 +8,8 @@
 
 # :books: Table of Contents <!-- omit in toc -->
 
-- [:briefcase: Business Case](#briefcase-business-case)
+- [:briefcase: Business Case and Requirement](#briefcase-business-case-and-requirement)
 - [:bookmark_tabs:Example Datasets](#bookmark_tabsexample-datasets)
-- [:triangular_flag_on_post: The Requirement](#triangular_flag_on_post-the-final-test-requirements)
 - [A. Data Exploration and Cleansing](#a-data-exploration-and-cleansing)
 - [B. Analysis](#b-analysis)
 
@@ -23,12 +22,12 @@
 
 You are a Data Analyst working for an e-commerce company named X. You are tasked with preparing a presentation to present an overview of the company's business and operations to date for Sales and Operations Managers. 
 
-The presentation should include at a minimum the following information: 
+❔ The presentation should include at a minimum the following information: 
 - Business overview. 
 - Customer satisfaction.  
 - 2 to 3 areas of recommendation (areas) where the company can improve.
 
-Some additional information for the case study:
+➕ Some additional information for the case study:
 - Since there is only data up to 2018, we will assume that it is currently September 2018 (data after September 2018 you can ignore).
 - The company is based in the US, but incorporated in Brazil (that's why some information is written in Portuguese).
 
