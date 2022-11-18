@@ -4,7 +4,7 @@
 <p align="right"> Using Python - Google Colab vs Power BI </p>
 
 
-# :books: Table of Contents <!-- omit in toc -->
+## :books: Table of Contents <!-- omit in toc -->
 
 - [🔢 PYTHON - GOOGLE COLAB](#-python---google-colab)
   - [Import Library and dataset](#-import-library-and-dataset)
@@ -16,9 +16,9 @@
 
 ---
 
-# 👩🏼‍💻 PYTHON - GOOGLE COLAB
+## 👩🏼‍💻 PYTHON - GOOGLE COLAB
 
-## 🔤 IMPORT LIBRARY AND DATASET ##
+## 🔤 IMPORT LIBRARY AND DATASET 
 
 <details><summary> Click to expand :arrow_down: </summary>
   
