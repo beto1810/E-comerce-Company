@@ -424,34 +424,148 @@ product_summarize.to_csv('/content/drive/MyDrive/Final/De 1/product_summarize_da
 </details>  
 
 ---
-## IMPORT CLEAN FILE TO POWER BI
+## 📊 POWER BI
 
 **1. Transform Data** 
 
-Use First rows as Header, Change type of click,cost,bookings,booking_rev,month column to Number type. Remove First Column (order column)
-- Source data :
-![image](https://user-images.githubusercontent.com/101379141/201894513-c4263575-e40b-42cc-a2f4-9b7933c7fd6e.png)
+After import dataset, we need to promote header of columns and change some data type columns. 
 
-![image](https://user-images.githubusercontent.com/101379141/201894684-97f12f6b-6fee-4f88-8ed9-c13dbbc955d2.png)
+<details><summary> Customers dataset  </summary>
 
-![image](https://user-images.githubusercontent.com/101379141/201894759-e110a007-f81a-45e3-a0df-78f373ea8ce0.png)
+ - Source (first 10 rows)
+  
+![image](https://user-images.githubusercontent.com/101379141/202607728-04d35ccc-0db2-49b4-97f8-0d6e2cb0c03c.png)
+  
+ - Transformed 
+  
+ ![image](https://user-images.githubusercontent.com/101379141/202607690-acfd75d9-4359-4af6-85b8-c98c78fac434.png)
 
-- Promoted header, Change type 
+</details>  
 
-![image](https://user-images.githubusercontent.com/101379141/201894136-a9bfc207-47aa-436b-96d6-751af62d8f5f.png)
+<details><summary> Order Items dataset  </summary>
+ 
+- Source (first 10 rows)
+  
+ ![image](https://user-images.githubusercontent.com/101379141/202607942-2038f7a4-e235-4a46-ac7b-86e2b673b294.png)
+  
+- Transformed
+  
+ ![image](https://user-images.githubusercontent.com/101379141/202608029-b7bc5871-cca9-477f-a03b-773566b168aa.png)
+  
+</details>  
 
-- Replace values and fix typing errors :
 
-![image](https://user-images.githubusercontent.com/101379141/201894397-af46c3c7-807b-4feb-a779-e28ce06ff844.png)
+<details><summary> Order Payments dataset  </summary>
+
+- Source (First 10 rows)
+  ![image](https://user-images.githubusercontent.com/101379141/202608207-1e51c2b0-5257-458c-8560-acbe82bdc4ec.png)
+  
+- Transformed
+  ![image](https://user-images.githubusercontent.com/101379141/202608270-29d59313-6861-4c00-a2e1-643fc7f92ccd.png)
+</details>  
+
+<details><summary> Order Reviews dataset  </summary>
+
+- Source (First 10 rows)
+![image](https://user-images.githubusercontent.com/101379141/202608439-6de93b9f-57e5-4dde-8baf-46037492f1d8.png)
+
+- Transformed
+![image](https://user-images.githubusercontent.com/101379141/202608488-a2aa5431-19b6-4203-bf35-3515ab38ebdf.png)
+
+</details>  
+
+<details><summary> Orders dataset  </summary>
+
+- Source (First 10 rows)
+ ![image](https://user-images.githubusercontent.com/101379141/202608610-952075c6-cc13-4447-af29-f3a0d6ca5d7d.png)
+  
+- Transformed
+  ![image](https://user-images.githubusercontent.com/101379141/202608652-21c233c4-5298-4060-a50b-043992d4cfdd.png)
+
+</details>  
+
+<details><summary> Product Summarize Dataset  </summary>
+  
+- Source (First 10 rows)
+![image](https://user-images.githubusercontent.com/101379141/202608743-b762ec37-e78f-4db7-ba56-fc6e6d2fd238.png)
+
+- Transformed  
+![image](https://user-images.githubusercontent.com/101379141/202608775-130d0dd2-b3ec-4063-9eb1-174b5270b585.png)
+
+</details>  
+
+**2. Dax, Measure** 
+
+To support for anlysis chart, We need to create following measure and dax :
+
+<details><summary> 1%star - to filter 1 star review  </summary>
+
+```
+%1star = divide(calculate(count(order_items_dataset[English_name_product]),order_items_dataset[Average_score] = 1),count(order_items_dataset[English_name_product]))
+  
+```  
+</details>  
+
+  
+<details><summary> 5%star - to filter 5 star review  </summary>
+
+```
+%5star = divide(calculate(count(order_items_dataset[English_name_product]),order_items_dataset[Average_score] = 5),count(order_items_dataset[English_name_product]))
+```
+</details>  
 
 
+<details><summary> %Comment - to calculate % order has comment   </summary>
 
-  ```python
-  #Drop all 610 Null value rows , because they are not significant ( 610  rows >< 32951 total entries )
-  products = products.dropna()  
-  products.isnull().sum()  
-                                                                                     
-  ```                                                                                    
-  ![image](https://user-images.githubusercontent.com/101379141/202596277-466fbd1b-d48b-4621-87a7-de256a357f78.png)
-                                                                                     
+```
+%Comment = Divide(CALCULATE(count(order_reviews_dataset[Comment]), order_reviews_dataset[Comment] = "Comment"),count(order_reviews_dataset[order_id]))
+```
+</details> 
+
+<details><summary> Average_Score - Average score of orders   </summary>
+
+```
+Average_Score = SUM(order_items_dataset[Average_score])/count(order_items_dataset[order_id])
+```
+</details>
+
+<details><summary> Comment - Count of orders has comment   </summary>
+
+```
+Comment = CALCULATE(count(order_reviews_dataset[Comment]),order_reviews_dataset[Comment] = "Comment")
+```
+</details>
+
+<details><summary> Comment_Star - Calculate review score of orders having comment   </summary>
+
+```
+Comment_Star = calculate(count(order_reviews_dataset[review_score]),order_reviews_dataset[Comment] = "Comment")
+```
+</details>
+
+<details><summary> Total_time_to_delivery average per customer_city   </summary>
+
+```
+Total_time_to_delivery average per customer_city = DIVIDE(sum(orders_dataset[Total_time_to_delivery]),count(orders_dataset[order_id]))
+```
+</details>
+
+<details><summary> Voucher_cat - calculate orders has applied voucher  </summary>
+
+```
+Voucher_cat = Divide(CALCULATE(count(order_payments_dataset[payment_type]),order_payments_dataset[payment_type] = "voucher"),count(order_items_dataset[product_id]))
+```
+</details>
+
+**3.Create new table**
+
+To match the average score of order. I have to create new table 
+
+```
+Average = SUMMARIZECOLUMNS(order_reviews_dataset[order_id],"Average_Score",AVERAGE(order_reviews_dataset[review_score]))
+```
+<details><summary> The First Few Rows  </summary>
+ 
+![image](https://user-images.githubusercontent.com/101379141/202612783-d8974939-f0b0-43e3-a655-f003e98c0758.png)
+  
 </details>
