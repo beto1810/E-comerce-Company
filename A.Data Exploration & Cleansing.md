@@ -283,36 +283,63 @@ products[products['product_weight_g']== 0]
 
 </details>
 
-<details><summary> Check Null Values  </summary>
+<details><summary> The  Overall  </summary>
+  
+  ```python
+  #Check Null Values
+  products.isnull().sum()
+  ```
+  ![image](https://user-images.githubusercontent.com/101379141/202596089-660af9b9-c2b1-4f9b-b894-945d6c388aba.png)
 
-```python
-#Check Null Values
-products.isnull().sum()
-```
-![image](https://user-images.githubusercontent.com/101379141/202596089-660af9b9-c2b1-4f9b-b894-945d6c388aba.png)
-
   
-```python
-#Check Null values of category name column
-products[products['product_category_name'].isnull() == True]
-```
-![image](https://user-images.githubusercontent.com/101379141/202596188-5f0c384f-8126-4b1e-b4b6-fc80c8d0841b.png)
+  ```python  
+  #Check Null values of category name column
+  products[products['product_category_name'].isnull() == True]
+  ```
+  ![image](https://user-images.githubusercontent.com/101379141/202596188-5f0c384f-8126-4b1e-b4b6-fc80c8d0841b.png)
   
-```python
-#Check Null values of weight column
-products[products['product_weight_g'].isnull() == True]
-```
-![image](https://user-images.githubusercontent.com/101379141/202596235-c4e5dffb-90cf-4c80-97a0-3d14e83ba554.png)
+  ```python
+  #Check Null values of weight column
+  products[products['product_weight_g'].isnull() == True]
+  ```
   
-```python
-#Drop all 610 Null value rows , because they are not significant ( 610  rows >< 32951 total entries )
-products = products.dropna()  
-products.isnull().sum()  
+  ![image](https://user-images.githubusercontent.com/101379141/202596235-c4e5dffb-90cf-4c80-97a0-3d14e83ba554.png)
+  
+  ```python
+  #Drop all 610 Null value rows , because they are not significant ( 610  rows >< 32951 total entries )
+  products = products.dropna()  
+  products.isnull().sum()  
                                                                                      
-```
-![image](https://user-images.githubusercontent.com/101379141/202596277-466fbd1b-d48b-4621-87a7-de256a357f78.png)
+  ```                                                                                    
+  ![image](https://user-images.githubusercontent.com/101379141/202596277-466fbd1b-d48b-4621-87a7-de256a357f78.png)
                                                                                      
 </details>
+
+<details><summary> Check Null Values </summary>
+
+  ```python
+  #Check product_weight_g distribution
+  sns.distplot(products['product_weight_g'])
+  ```
+  ![image](https://user-images.githubusercontent.com/101379141/202597280-5893fdcf-addb-40af-8b80-13b6561c8070.png)
+  
+  ```python
+  #Replace "0" values of weight to "median"
+  products['product_weight_g']= products['product_weight_g'].replace(0, products['product_weight_g'].median())  
+  ```
+  
+  ```python
+  products.describe()
+  ```
+  ![image](https://user-images.githubusercontent.com/101379141/202597233-2e49fc07-7420-4dad-98a2-39934266b62a.png)
+  
+</details>  
+
+---  
+### 7️⃣ Product Name Translation Dataset
+  
+- There are 3 things that we are doing with this dataset:
+
 
   
 ---
