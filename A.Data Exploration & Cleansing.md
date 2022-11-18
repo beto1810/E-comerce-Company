@@ -10,9 +10,9 @@
   - [Import Library and dataset](#-import-library-and-dataset)
   - [Explore, clean & transform data](#-import-library-and-dataset)
 - [📊 POWER BI](#-power-bi)
-  - 1.Transform Data
-  - 2.Dax, Measure
-  - 3.Create New Table
+  - [1.Transform Data](#1-transform-data)
+  - [2.Dax, Measure](#2-dax-measure)
+  - [3.Create New Table](#3-create-new-table)
 
 ---
 
@@ -570,7 +570,7 @@ Voucher_cat = Divide(CALCULATE(count(order_payments_dataset[payment_type]),order
 ```
 </details>
 
-### 3.Create New Table
+### 3. Create New Table
 
 To match the average score of order. I have to create new table 
 
