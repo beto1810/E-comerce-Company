@@ -283,39 +283,38 @@ products[products['product_weight_g']== 0]
 
 </details>
 
-<details><summary> The  Overall  </summary>
-  
-  ```python
+<details><summary> Check Null Values </summary>
+
+```python
   #Check Null Values
   products.isnull().sum()
   ```
   ![image](https://user-images.githubusercontent.com/101379141/202596089-660af9b9-c2b1-4f9b-b894-945d6c388aba.png)
 
+
+```python  
+#Check Null values of category name column
+products[products['product_category_name'].isnull() == True]
+```
+![image](https://user-images.githubusercontent.com/101379141/202596188-5f0c384f-8126-4b1e-b4b6-fc80c8d0841b.png)
+
+```python
+#Check Null values of weight column
+products[products['product_weight_g'].isnull() == True]
+```
   
-  ```python  
-  #Check Null values of category name column
-  products[products['product_category_name'].isnull() == True]
-  ```
-  ![image](https://user-images.githubusercontent.com/101379141/202596188-5f0c384f-8126-4b1e-b4b6-fc80c8d0841b.png)
-  
-  ```python
-  #Check Null values of weight column
-  products[products['product_weight_g'].isnull() == True]
-  ```
-  
-  ![image](https://user-images.githubusercontent.com/101379141/202596235-c4e5dffb-90cf-4c80-97a0-3d14e83ba554.png)
-  
-  ```python
-  #Drop all 610 Null value rows , because they are not significant ( 610  rows >< 32951 total entries )
+![image](https://user-images.githubusercontent.com/101379141/202596235-c4e5dffb-90cf-4c80-97a0-3d14e83ba554.png)  
+
+ ```python
+  #Drop all 610 Null value rows , because they are not significant ( 610  rows compare to 32951 total entries )
   products = products.dropna()  
   products.isnull().sum()  
-                                                                                     
-  ```                                                                                    
-  ![image](https://user-images.githubusercontent.com/101379141/202596277-466fbd1b-d48b-4621-87a7-de256a357f78.png)
-                                                                                     
-</details>
+ ```
+ ![image](https://user-images.githubusercontent.com/101379141/202596277-466fbd1b-d48b-4621-87a7-de256a357f78.png)
+                                                                                       
+</details>  
 
-<details><summary> Check Null Values </summary>
+<details><summary> Check product weight column </summary>
 
   ```python
   #Check product_weight_g distribution
@@ -339,11 +338,92 @@ products[products['product_weight_g']== 0]
 ### 7️⃣ Product Name Translation Dataset
   
 - There are 3 things that we are doing with this dataset:
+  - Checking The Overall  
+  - Merge the product name of 2 table  
+  - Checking Null values of merged table and replacing Null values by new category. 
 
+<details><summary> The Overall </summary>
 
+```python
+product_name_translation.head()
+```
+![image](https://user-images.githubusercontent.com/101379141/202599864-11041880-bf87-475b-b51e-2fb433797183.png)
+
+```python
+product_name_translation.info()
+```
   
----
+![image](https://user-images.githubusercontent.com/101379141/202599948-948b1539-f4af-48cd-b166-b622589b4209.png)
+  
+</details>  
 
+<details><summary> Merge product name of 2 table </summary>
+
+```python
+#Compare the product name of 2 table 
+print(product_name_translation['product_category_name'].nunique())
+print(products['product_category_name'].nunique()) 
+```
+![image](https://user-images.githubusercontent.com/101379141/202600071-0df0c1bc-816a-48df-8eef-aa62d1f147b6.png)
+
+```python
+product_summarize = products.merge(product_name_translation,how ='left', on = 'product_category_name' )  
+```
+  
+</details>  
+
+<details><summary> Check Null values of merged table and Replace Null values </summary>
+  
+```python
+#Check Null values
+product_summarize.isnull().sum()  
+```
+![image](https://user-images.githubusercontent.com/101379141/202600293-a3e49db7-04e0-4845-8eb0-f3ee59b72501.png)
+
+```python
+product_summarize[product_summarize['product_category_name_english'].isnull() == True]  
+```
+![image](https://user-images.githubusercontent.com/101379141/202600383-93313b22-bed2-4d2c-836b-27bf91d69c18.png)
+
+```python
+#Replace Null Value by Unspecified
+
+product_summarize['product_category_name_english'] = product_summarize['product_category_name_english'].fillna(value ='Unspecified')  
+product_summarize.isnull().sum()  
+
+```
+![image](https://user-images.githubusercontent.com/101379141/202600501-2c762e90-fa24-4e68-a958-ca4564de51c6.png)
+    
+</details>  
+
+---
+### ✔ Save File 
+
+<details><summary> Code here  </summary>
+
+```python
+#File customers
+customers.to_csv('/content/drive/MyDrive/Final/De 1/customers_dataset.csv',index=False)
+
+#File orders dataset
+orders.to_csv('/content/drive/MyDrive/Final/De 1/orders_dataset.csv',index=False)
+
+#File orders items
+order_items.to_csv('/content/drive/MyDrive/Final/De 1/order_items_dataset.csv',index=False)
+
+#File order payments
+order_payments.to_csv('/content/drive/MyDrive/Final/De 1/order_payments_dataset.csv',index=False)
+
+#File order review
+order_reviews.to_csv('/content/drive/MyDrive/Final/De 1/order_reviews_dataset.csv',index=False)
+
+#Merged file of product & produc_translation 
+product_summarize.to_csv('/content/drive/MyDrive/Final/De 1/product_summarize_dataset.csv',index=False)
+
+```
+</details>  
+
+---
 ## IMPORT CLEAN FILE TO POWER BI
 
 **1. Transform Data** 
@@ -366,3 +446,12 @@ Use First rows as Header, Change type of click,cost,bookings,booking_rev,month c
 
 
 
+  ```python
+  #Drop all 610 Null value rows , because they are not significant ( 610  rows >< 32951 total entries )
+  products = products.dropna()  
+  products.isnull().sum()  
+                                                                                     
+  ```                                                                                    
+  ![image](https://user-images.githubusercontent.com/101379141/202596277-466fbd1b-d48b-4621-87a7-de256a357f78.png)
+                                                                                     
+</details>
