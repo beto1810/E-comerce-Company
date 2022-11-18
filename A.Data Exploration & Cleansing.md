@@ -10,9 +10,9 @@
   - [Import Library and dataset](#-import-library-and-dataset)
   - [Explore, clean & transform data](#-import-library-and-dataset)
 - [📊 POWER BI](#-power-bi)
-  - 1. Transform Data
-  - 2. Dax,Measure
-  - 3. Create New Table
+  - 1.Transform Data
+  - 2.Dax, Measure
+  - 3.Create New Table
 
 ---
 
