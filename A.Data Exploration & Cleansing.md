@@ -3,7 +3,20 @@
 
 <p align="right"> Using Python - Google Colab vs Power BI </p>
 
-#
+
+# :books: Table of Contents <!-- omit in toc -->
+
+- [🔢 PYTHON - GOOGLE COLAB](#-python---google-colab)
+  - [Import Library and dataset](#-import-library-and-dataset)
+  - [Explore, clean & transform data](#-import-library-and-dataset)
+- [📊 POWER BI](#-power-bi)
+  - 1. Transform Data
+  - 2. Dax,Measure
+  - 3. Create New Table
+
+---
+
+# 👩🏼‍💻 PYTHON - GOOGLE COLAB
 
 ## 🔤 IMPORT LIBRARY AND DATASET ##
 
@@ -41,7 +54,7 @@ products = pd.read_csv('/content/drive/MyDrive/Final/De 1/dataset/products_datas
   
 </details>
 
-## 🔎 EXPLORE DATA
+## 🔎 EXPLORE, CLEAN & TRANSFORM DATA
 
 ### 1️⃣ Customers Dataset
 
@@ -557,7 +570,7 @@ Voucher_cat = Divide(CALCULATE(count(order_payments_dataset[payment_type]),order
 ```
 </details>
 
-**3.Create new table**
+**3.Create New Table**
 
 To match the average score of order. I have to create new table 
 
