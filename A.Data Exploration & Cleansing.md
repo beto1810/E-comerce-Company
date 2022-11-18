@@ -439,7 +439,7 @@ product_summarize.to_csv('/content/drive/MyDrive/Final/De 1/product_summarize_da
 ---
 ## 📊 POWER BI
 
-**1. Transform Data** 
+### 1. Transform Data
 
 After import dataset, we need to promote header of columns and change some data type columns. 
 
@@ -507,7 +507,7 @@ After import dataset, we need to promote header of columns and change some data 
 
 </details>  
 
-**2. Dax, Measure** 
+### 2. Dax, Measure
 
 To support for anlysis chart, We need to create following measure and dax :
 
@@ -570,7 +570,7 @@ Voucher_cat = Divide(CALCULATE(count(order_payments_dataset[payment_type]),order
 ```
 </details>
 
-**3.Create New Table**
+### 3.Create New Table
 
 To match the average score of order. I have to create new table 
 
