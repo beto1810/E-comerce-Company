@@ -582,3 +582,11 @@ Average = SUMMARIZECOLUMNS(order_reviews_dataset[order_id],"Average_Score",AVERA
 ![image](https://user-images.githubusercontent.com/101379141/202612783-d8974939-f0b0-43e3-a655-f003e98c0758.png)
   
 </details>
+
+**Final Model**
+
+<details><summary> Click Here  </summary>
+
+![image](https://user-images.githubusercontent.com/101379141/202614575-3ffb8db6-9e53-42af-8a08-99f5423c4a5e.png)
+
+</details>
