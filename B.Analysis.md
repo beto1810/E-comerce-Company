@@ -73,7 +73,7 @@
 --- 
 # 5. Review 
 
-![image](https://user-images.githubusercontent.com/101379141/202991869-4787415b-6ea5-406a-989c-59723bfe4d75.png)
+![image](https://user-images.githubusercontent.com/101379141/203003218-4ae1b485-b58c-4dbc-8002-058f1d27256e.png)
 
 - As we can see that 5-star reviews made up the majority of total reviews. 
   - However, 1-star reviews also contribute a great number with third-place. And 77% of 1-star reviews attached with a comments.
