@@ -16,7 +16,7 @@
 
 # 1. Overall 
 
-![image](https://user-images.githubusercontent.com/101379141/202943115-53c4e760-38ef-4d2f-bec6-621078c4f02d.png)
+![image](https://user-images.githubusercontent.com/101379141/202949850-2abec1b3-48be-44e8-ae14-f5d2543fb51e.png)
 
 - There are about 100k brazilians having experience shopping on E-commerce website and other shopping platforms .
   - With about 100,000 orders has been done by brazilians, there are 135,000 purchased products and 16 mil Brazilian real is total revenue in 3 years of operation.
@@ -24,32 +24,40 @@
 
 - About Geographical Location
   - Sao Paulo (SP) vs Rio de Janeiro (RJ) are the best active state with the highest of purchasing product. With the supporting of favorable geographical area and the highest population density in Brazil, 16k and  7k numbers of products has been purchasing by these citizens. 
-  - By contrast, [Roraima (RR)](https://en.wikipedia.org/wiki/Roraima) vs [Amapá (AP)](https://en.wikipedia.org/wiki/Amap%C3%A1) has the disadvantages of transportation limit, geographical area undevelopement of business, they contribute badly to total orders of Brazil. 
+  - By contrast, [Roraima (RR)](https://en.wikipedia.org/wiki/Roraima),  [Amapá (AP)](https://en.wikipedia.org/wiki/Amap%C3%A1), [Acre (AC)](https://en.wikipedia.org/wiki/Acre_(state)) has the disadvantages of transportation limit, geographical area undevelopement of business, they contribute badly to total orders of Brazil. 
 
-![image](https://user-images.githubusercontent.com/101379141/202946224-7a76252d-4a8a-4091-a0b4-3c97f7f89ee0.png)
+<img src="https://user-images.githubusercontent.com/101379141/202946224-7a76252d-4a8a-4091-a0b4-3c97f7f89ee0.png" alt="Image" width="500" height="500">
 
+
+- Regarding to Product : Overall, We can give a comment is that family stuffs are favorable items of Bazilians. With the development of economics, Brazilians also want to improve their life experience with useful home furniture and beauty items.
+
+- Relating to the trending purchase of Brazilians, Overall, we can see that E-commerce has experience a sustainable development of total order time by time. Especially , November of 2017, There was a dramatical increasing of ordering, one of explanation for this events is the [Proclamation of the Republic of Brazil](https://en.wikipedia.org/wiki/Proclamation_of_the_Republic_(Brazil)). I believe that E-commerce company had took advantage of this event to promote the business. 
 
 ---
 
 # 2. Sale and Product
 
-![image](https://user-images.githubusercontent.com/101379141/201920750-c75dfdca-7127-4d3c-8ee4-5d6da0f6cf0e.png)
+![image](https://user-images.githubusercontent.com/101379141/202952679-2ebc44b9-5b08-4ea0-8695-f78631a77ba7.png)
 
-- Regarding of total of views, Motor Yacht contained the biggest part with over one third, 36% total of views, followed by Sport Boat 26% and Cabin Boat 16%. 
-- In the 5 group of view , Motor Yacht also dominated comparing the other type of boat
+- Although family furniture category items as bed_bad_table accounts for the largest number of purchased products, stuffs relating beauty products and luxury items (watches) has the best contribute to total revenue of E-commerce company.
 
--> Motor Yacht is usually for family and friends; sport boat is for individuals who love water sport 
+- With the largest of purchasing area as Sao Paulo, Rio de Janeiro and Minas Gerais , we can also understand that they are also on top of revenue contribute to company.
+
+- With Products, the family and sporty items are always on top picking of citizens. Beside that, There are other items becomming popular in different months:
+  - watches_gifts becomes hot items in May, June, July where some occasions has been happened as Mother day, Fathers’ Day, Valentine Day of Brazil. 
+  - Children's day and Christmast day are the important day for retail companies in Brazil, Toys items are hot items in these occasions.
+  - Computer Accessories items are purchased much on Jan, Feb, March. These months are time of the biggest sale off technology items.
 
 ---
 
-# 3. Order
+# 3. Orders
 
-![image](https://user-images.githubusercontent.com/101379141/201921551-34a9de9e-7609-4c5b-9a69-b755ac091508.png)
+![image](https://user-images.githubusercontent.com/101379141/202962490-0fd6d488-39f6-4e81-92cb-5f8b54da7ee8.png)
 
-- In Overall, The relationship between Boat Price and Views :
-  - Higher boat price does not mean that attract great attention of viewers.
-  - Customer focus their attention on Boat Lower than 150k Europe types, especially 50k Europe.
-  - Although higher 1 million Europe type of boat have average rate than 150k to 1million, but I guest that customer are just curious about these super boats instead of having serious buying purpose.
+- With Orders Segment:
+  - E-commerce company has done a great job in delievery to customer with 96% order deliveried on time
+  - The majority of late delivery was on holiday occasions as (National day, Proclamation of the Republic of Brazil, Carnival)
+  
 
 --- 
 # 4. Transaction
