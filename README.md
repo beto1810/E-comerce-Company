@@ -324,9 +324,9 @@ fd826e7cf63160e536e0908c76c3f441|	addec96d2e059c80c30fe6871d30d177|	4534|	sao pa
 
 # 🧾 What can you practice with this case study?
 - Python
-  - pandas, numpy
-  - cleaning, transforming.
-  - unpivot, wide_to_long
+  - pandas, numpy,matplotlib,seaborn.
+  - cleaning, check Null values, transforming.
+ 
   - import, save csv file. 
 - POWER BI
   - Visualize
