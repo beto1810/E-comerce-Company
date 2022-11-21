@@ -1,4 +1,4 @@
-# 🚢 Case Study - E-commerce Company : B.Analysis
+# 🛒 Case Study - E-commerce Company : B.Analysis
 
 ![image](https://user-images.githubusercontent.com/101379141/202636791-a5d3ea55-74b8-4444-9f8f-618cbff68013.png)
 
@@ -6,7 +6,7 @@
 # :books: Table of Contents <!-- omit in toc -->
 
 - [1. Overall](#1-overall)
-- [2. Product](#2-product)
+- [2. Sale & Product](#2-sale-and-product)
 - [3. Order](#3-order)
 - [4. Transaction](#4-transaction)
 - [5. Review](#5-review)
@@ -16,15 +16,22 @@
 
 # 1. Overall 
 
-![image](https://user-images.githubusercontent.com/101379141/201920235-929ebdcf-b00c-4f38-b0dc-d9b8a7071806.png)
+![image](https://user-images.githubusercontent.com/101379141/202943115-53c4e760-38ef-4d2f-bec6-621078c4f02d.png)
 
-- Website has 1.4 million of Views last 7 days 
+- There are about 100k brazilians having experience shopping on E-commerce website and other shopping platforms .
+  - With about 100,000 orders has been done by brazilians, there are 135,000 purchased products and 16 mil Brazilian real is total revenue in 3 years of operation.
+  - Service of E-commerce has rated at 4.07 points and customer has commented over 42k times.
 
-- In total, about 10k boats was listed from 47 countries and 902 manufacturers. 
+- About Geographical Location
+  - Sao Paulo (SP) vs Rio de Janeiro (RJ) are the best active state with the highest of purchasing product. With the supporting of favorable geographical area and the highest population density in Brazil, 16k and  7k numbers of products has been purchasing by these citizens. 
+  - By contrast, [Roraima (RR)](https://en.wikipedia.org/wiki/Roraima) vs [Amapá (AP)](https://en.wikipedia.org/wiki/Amap%C3%A1) has the disadvantages of transportation limit, geographical area undevelopement of business, they contribute badly to total orders of Brazil. 
+
+![image](https://user-images.githubusercontent.com/101379141/202946224-7a76252d-4a8a-4091-a0b4-3c97f7f89ee0.png)
+
 
 ---
 
-# 2. Product
+# 2. Sale and Product
 
 ![image](https://user-images.githubusercontent.com/101379141/201920750-c75dfdca-7127-4d3c-8ee4-5d6da0f6cf0e.png)
 
