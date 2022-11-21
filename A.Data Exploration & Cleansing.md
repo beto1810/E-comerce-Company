@@ -570,6 +570,22 @@ Voucher_cat = Divide(CALCULATE(count(order_payments_dataset[payment_type]),order
 ```
 </details>
 
+<details><summary> Count Product  </summary>
+
+```
+Count_Product = COUNT(order_items_dataset[English_name_product])
+```
+  
+</details>
+
+<details><summary> Rank Product  </summary>
+
+```
+Rank_Product = RANKX(all(order_items_dataset[English_name_product]),[Count_Product])
+```
+  
+</details>
+
 ### 3. Create New Table
 
 To match the average score of order. I have to create new table 
