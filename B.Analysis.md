@@ -7,7 +7,7 @@
 
 - [1. Overall](#1-overall)
 - [2. Sale & Product](#2-sale-and-product)
-- [3. Order](#3-order)
+- [3. Orders](#3-orders)
 - [4. Transaction](#4-transaction)
 - [5. Review](#5-review)
 - [6. Conclusion & Recommendation](#6-conclusion--recommendation)
@@ -52,52 +52,54 @@
 
 # 3. Orders
 
-![image](https://user-images.githubusercontent.com/101379141/202962490-0fd6d488-39f6-4e81-92cb-5f8b54da7ee8.png)
+![image](https://user-images.githubusercontent.com/101379141/202964959-d0d17818-d914-4ebb-9d62-f8b25425006b.png)
 
 - With Orders Segment:
   - E-commerce company has done a great job in delievery to customer with 96% order deliveried on time
-  - The majority of late delivery was on holiday occasions as (National day, Proclamation of the Republic of Brazil, Carnival)
-  
+    - The majority of late delivery was on holiday occasions as (National day, Proclamation of the Republic of Brazil, Carnival)
+    - Beside that, The disadvantages of geographical location of [Roraima (RR)](https://en.wikipedia.org/wiki/Roraima), [Amapá (AP)](https://en.wikipedia.org/wiki/Amap%C3%A1),  [Acre (AC)](https://en.wikipedia.org/wiki/Acre_(state)) is the reason that time of delievery to these location is the longest one. 
 
 --- 
 # 4. Transaction
 
-![image](https://user-images.githubusercontent.com/101379141/201921720-afc85bcf-a65c-4719-b0d1-afe408d103ec.png)
+![image](https://user-images.githubusercontent.com/101379141/202966203-8c99e7f6-b7af-4205-90ba-103c6917dfdc.png)
 
-- Boat made by GRP material is significantly hot in the current market with over 70% of total market boat material
-- Some super boat with price over higher 1million Europe choose GRP as its core material. 
+- With development of economic and technology, credit card is the first choice in selection of payment with about 80k orders used credit card
+  - The time-saving of credit card is the reason make it become the most popular one. 
+  - Secondly, Credit card is also linked with the installment of banks and finance services. The procedure to start an installment is easy and fast.
 
--> GRP is lighter and stronger and It’s easier for boat owners to repair boats. 
+- In over 5k of voucher applied to orders, the security category items accounts for over a half of total. I believe that because of their the high cost and not-easy approaching, the retailers has provided the bunch of vouchers to promote of purchasing.
 
 --- 
 # 5. Review 
 
-![image](https://user-images.githubusercontent.com/101379141/201922146-bd719c40-70c9-4551-a240-25f95eab99a2.png)
+![image](https://user-images.githubusercontent.com/101379141/202991869-4787415b-6ea5-406a-989c-59723bfe4d75.png)
 
-- Condition :
-  - Used boat accounts for majority of total listed on website.
-  - New condition boat also receive attention of consumer as you can see here, there no much significant different of avarage view between 3 type of boat’s condition
+- As we can see that 5-star reviews made up the majority of total reviews. 
+  - However, 1-star reviews also contribute a great number with third-place. And 77% of 1-star reviews attached with a comments.
+  - The majority of 2-star reviews are comments reviews.
+    
+   ![image](https://user-images.githubusercontent.com/101379141/202993651-1f461d5b-4c2d-487a-abbf-d010c1b4546f.png) ![image](https://user-images.githubusercontent.com/101379141/202994707-bd20c3f5-7d2a-469c-a86c-9b3003b92999.png)
 
--> Used boat got a little bit more attractive by it got advantage of price than new boat
+  
+- [Roraima (RR)](https://en.wikipedia.org/wiki/Roraima) State , [Maranhao (MA)](https://en.wikipedia.org/wiki/Maranh%C3%A3o), [Alagoas (AL)](https://en.wikipedia.org/wiki/Alagoas)  are location where has the lowest Average Reviews Score with 50% comment.
+  - It can be understood that the citizen was angry because of late delivery, But because of its Geographical location.
 
-- Engine : Boat use diesel and Unleaded engine are most popurlar type
 
 --- 
 
 # 6. Conclusion & Recommendation
 
 - In Last 7 days, Nearly New Nautical Website has experienced some significant numbers as:
-  - Nearly New Nautical Website had 1.4 millions of views and about 10,000 boats posted.
-  - Top 3 Boat Type by views are Motor Yacht, Sport Boat, Cabin Boat.
-  - High price boat does not attract viewers instead of Low price boat.
-  - GRP is the most popular material of boat.
-  - Diesel and Unleaded Engine boat account for more than 98% of total boat.
-  - Europe countries, especially Switzerland got the highest amount of boat listed on website.
+  - Family and sporty items are the most purchasing items. There are also other trending product following by different months.
+  - Company did a great job in delievery service, however it's hard to delievery some remote states limiting by geographical location.
+  - Credit card is the most popular finance service 
+  - Company service received a great review from customer with majority of 5-star 
 
 
 
-- 🚩 So, I believe that Nearly New Nautical Website should:
-  - Design Special Newsletter base on top countries like Switzerland, Germany, Italy or they can consider have special sections relating to top countries as their landscape, lake, river, beach etc.
-  - Recommend some top manufacturer and have interview with management teams of these manufacturers.
-  - With sales section, newsletter should give some useful insight to boat owners relating type of boat, price, material.
-  - Thinking about broadening market to North America.
+- 🚩 So, I believe that this E-commerce should:
+  - Runing creative seasonal marketing campaigns with different items.
+  - Doing the suggestion marketing services to promote the business.
+  - With remote areas, to promote the services and quality, we should create specific campaigns as giving more vouchers and discounts to these areas to improve their experience.
+  - Keep continuing coperating with local business as bank and finance services to upgrade the experience services of customers.
