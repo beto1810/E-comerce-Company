@@ -82,9 +82,8 @@
    ![image](https://user-images.githubusercontent.com/101379141/202993651-1f461d5b-4c2d-487a-abbf-d010c1b4546f.png) ![image](https://user-images.githubusercontent.com/101379141/202994707-bd20c3f5-7d2a-469c-a86c-9b3003b92999.png)
 
   
-- [Roraima (RR)](https://en.wikipedia.org/wiki/Roraima) State , [Maranhao (MA)](https://en.wikipedia.org/wiki/Maranh%C3%A3o), [Alagoas (AL)](https://en.wikipedia.org/wiki/Alagoas)  are location where has the lowest Average Reviews Score with 50% comment.
+- [Roraima (RR)](https://en.wikipedia.org/wiki/Roraima) State , [Maranhao (MA)](https://en.wikipedia.org/wiki/Maranh%C3%A3o), [Alagoas (AL)](https://en.wikipedia.org/wiki/Alagoas)  are locations where have the lowest Average Reviews Score with 50% comment.
   - It can be understood that the citizen was angry because of late delivery, But because of its Geographical location.
-
 
 --- 
 
