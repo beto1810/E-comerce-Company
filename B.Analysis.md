@@ -89,7 +89,7 @@
 
 # 6. Conclusion & Recommendation
 
-- In Last 7 days, Nearly New Nautical Website has experienced some significant numbers as:
+- In Last 7 days, E-commerce Website has experienced some significant numbers as:
   - Family and sporty items are the most purchasing items. There are also other trending product following by different months.
   - Company did a great job in delievery service, however it's hard to delievery some remote states limiting by geographical location.
   - Credit card is the most popular finance service 
