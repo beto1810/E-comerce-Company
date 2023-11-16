@@ -60,7 +60,7 @@
     - Beside that, The disadvantages of geographical location of [Roraima (RR)](https://en.wikipedia.org/wiki/Roraima), [Amapá (AP)](https://en.wikipedia.org/wiki/Amap%C3%A1),  [Acre (AC)](https://en.wikipedia.org/wiki/Acre_(state)) is the reason that time of delievery to these location is the longest one. 
 
 --- 
-# 4. Transaction
+# 4. Customer Transaction
 
 ![image](https://user-images.githubusercontent.com/101379141/202966203-8c99e7f6-b7af-4205-90ba-103c6917dfdc.png)
 
@@ -71,7 +71,7 @@
 - In over 5k of voucher applied to orders, the security category items accounts for over a half of total. I believe that because of their the high cost and not-easy approaching, the retailers has provided the bunch of vouchers to promote of purchasing.
 
 --- 
-# 5. Review 
+# 5. Customer Satisfaction.
 
 ![image](https://user-images.githubusercontent.com/101379141/203003218-4ae1b485-b58c-4dbc-8002-058f1d27256e.png)
 
